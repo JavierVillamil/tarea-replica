@@ -1,0 +1,146 @@
+.container {
+    width: 90%;
+    margin: 2% 5%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Varela Round',
+        sans-serif;
+}
+
+.container a {
+    color: rgb(168, 56, 75);
+}
+
+.container a:hover {
+    color: red;
+}
+
+
+#year select {
+    font-size: 60px;
+    width: 260px;
+    padding-left: 60px;
+    border-radius: 15px;
+    border: 1px dotted grey;
+    font-family: "Varela Round", sans-serif;
+}
+
+#year select option {
+    font-size: 35px;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#calendar .month {
+    flex: 0 1 21%;
+    margin-bottom: 3em;
+}
+
+#calendar .month::before {
+    content: "ENERO";
+    display: block;
+    font-weight: bold;
+}
+
+#calendar .month:nth-child(2)::before {
+    content: "FEBRERO";
+}
+
+#calendar .month:nth-child(3)::before {
+    content: "MARZO";
+}
+
+#calendar .month:nth-child(4)::before {
+    content: "ABRIL";
+}
+
+#calendar .month:nth-child(5)::before {
+    content: "MAYO";
+}
+
+#calendar .month:nth-child(6)::before {
+    content: "JUNIO";
+}
+
+#calendar .month:nth-child(7)::before {
+    content: "JULIO";
+}
+
+#calendar .month:nth-child(8)::before {
+    content: "AGOSTO";
+}
+
+#calendar .month:nth-child(9)::before {
+    content: "SEPTIEMBRE";
+}
+
+#calendar .month:nth-child(10)::before {
+    content: "OCTUBRE";
+}
+
+#calendar .month:nth-child(11)::before {
+    content: "NOVIEMBRE";
+}
+
+#calendar .month:nth-child(12)::before {
+    content: "DICIEMBRE";
+}
+
+#calendar .month ul {
+    padding: 8px 0;
+    display: flex;
+}
+
+#calendar .month ul:first-child {
+    margin-bottom: 25px;
+    border-bottom: 3px solid #a05151a8;
+}
+
+#calendar .month ul li {
+    list-style-type: none;
+    flex: 1 1 0;
+}
+
+div {
+    display: block;
+}
+
+
+#year {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div#year select {
+    font-size: 60px;
+    width: 260px;
+    padding-left: 60px;
+    border-radius: 15px;
+    border: 1px dotted rgb(192, 187, 187);
+
+}
+
+#calendar .month ul li.holiday {
+    color: white;
+    border-radius: 35px 0px;
+    font-weight: bold;
+    background-color: #b61818;
+}
+
+#more-years {
+    margin-top: 2em;
+}
+
+#more-years div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
